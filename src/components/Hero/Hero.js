@@ -23,10 +23,10 @@ const Hero = (props) => (
       </SectionText>
       <Button onClick={() => window.open("https://www.linkedin.com/in/daffaadityarahman-14b588192/", "linkedin")}>Learn More</Button>
       <SocialContainer>
-          <SocialIcons href="https://github.com">
+          <SocialIcons href="https://github.com/DaffaAdityaDev">
             <AiFillGithub size="2rem" margin-right= "5px"/> <h3>Github</h3>
           </SocialIcons>
-          <SocialIcons href="https://linkedin.com"> 
+          <SocialIcons href="https://www.linkedin.com/in/daffaadityarahman-14b588192/"> 
             <AiFillLinkedin size="2rem"/> <h3>LinkedIn</h3>
           </SocialIcons>
           <SocialIcons href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaadityarahman990@gmail.com" target="_blank"> 
