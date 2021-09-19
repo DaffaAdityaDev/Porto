@@ -34,7 +34,7 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
-  padding: ${(props) => props.main ? '58px 0 16px' : '0'};
+  padding: ${(props) => props.main ? '0px 0 16px' : '0'};
 
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '56px' : '48px'};
@@ -96,6 +96,25 @@ export const SectionDivider = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 32px;
     height: 2px;
+  }
+`
+export const SectionSubTextColerBlue = styled.p`
+  max-width: 800px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #7DD0FF;
+  
+
+@media ${(props) => props.theme.breakpoints.md} {
+    max-width: 672px;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 14px;
+    line-height: 22px;
   }
 `
 export const SectionSubText = styled.p`

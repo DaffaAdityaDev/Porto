@@ -96,7 +96,10 @@ const Timeline = () => {
                   {item.text } <br/>
                 </CarouselItemText>
                 <CarouselItemText>
-                  {item.url && <LinkItem  onClick={() => window.open("https://certificates.cs50.io/0e324596-5c9f-4256-aa82-5e65b9aa0296.pdf?size=letter", "Certificate")}>Certificate</LinkItem>}
+                  {item.url && <LinkItem  onClick={() => window.open(`${item.url}`, "Certificate")}>Certificate</LinkItem>}
+                </CarouselItemText>
+                <CarouselItemText>
+                  {item.img && <LinkItem onClick={() => window.open(`${item.img}`, "Image")}>Image</LinkItem>}
                 </CarouselItemText>
                 </CarouselItem>
               </CarouselMobileScrollNode>
