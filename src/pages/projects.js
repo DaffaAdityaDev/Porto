@@ -6,6 +6,7 @@ function projects() {
     return (
         <Layout>
             <Projects />
+            <h1>Project</h1>
                 
             
         </Layout>
