@@ -10,9 +10,9 @@ import { Section } from '../styles/GlobalComponents';
 function projects() {
     return (
         <Layout>
-            <div>
-                project
-            </div>
+            <Projects>
+                
+            </Projects>
         </Layout>
     )
 }
