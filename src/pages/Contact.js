@@ -7,14 +7,15 @@ import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
 import { Section } from '../styles/GlobalComponents';
-function projects() {
+
+function Contact() {
     return (
         <Layout>
             <div>
-                project
+                contact
             </div>
         </Layout>
     )
 }
 
-export default projects
+export default Contact
