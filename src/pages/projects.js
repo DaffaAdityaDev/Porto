@@ -5,9 +5,9 @@ import { Layout } from '../layout/Layout';
 function projects() {
     return (
         <Layout>
-            <Projects>
+            <Projects />
                 
-            </Projects>
+            
         </Layout>
     )
 }
