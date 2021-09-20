@@ -20,11 +20,11 @@ const Header = () =>  (
           <NavLink>Home</NavLink>
         </Link>
       </li>
-      <li>
+      {/* <li>
         <Link href="/Projects">
           <NavLink>Projects</NavLink>
         </Link>
-      </li>
+      </li> */}
       <li>
         <Link href="/Contact">
           <NavLink>Contact</NavLink>
