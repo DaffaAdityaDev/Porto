@@ -4,6 +4,7 @@ import { CarouselButton, CarouselButtonDot, CarouselButtons, CarouselContainer, 
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { TimeLineData } from '../../constants/constants';
 import { LinkItem } from '../Footer/FooterStyles';
+import Fade from 'react-reveal/Fade';
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -45,12 +46,16 @@ const Timeline = () => {
 
   return (
     <Section id="about">
-      <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-        Learning Journey
-      </SectionText>
+      <Fade>
+        <SectionTitle>About Me</SectionTitle>
+        <SectionText>
+          Learning Journey
+        </SectionText>   
+      </Fade>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
+        <Fade>
+
           {TimeLineData.map((item, index) => (
               <CarouselMobileScrollNode key={index} final={index === TOTAL_CAROUSEL_COUNT - 1}>
                 <CarouselItem 
@@ -104,6 +109,7 @@ const Timeline = () => {
                 </CarouselItem>
               </CarouselMobileScrollNode>
           ))}
+        </Fade>
         </>
       </CarouselContainer>
       <CarouselButtons>

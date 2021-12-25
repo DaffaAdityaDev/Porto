@@ -19,14 +19,14 @@ const Hero = (props) => (
         I'm a Software Engineer
       </SectionTitle>
       <SectionText>
-        I'm a software engineer who focused build Full-Stack web developement in Jakarta
+        I'm a software engineer who focused build Front-end web developement in Jakarta
       </SectionText>
-      <Button onClick={() => window.open("https://www.linkedin.com/in/daffaadityarahman-14b588192/", "linkedin")}>Learn More</Button>
+      <Button onClick={() => window.open("https://www.linkedin.com/in/daffaadityarahman-14b588192/", "linkedin")}>About Me</Button>
       <SocialContainer>
-          <SocialIcons href="https://github.com/DaffaAdityaDev">
+          <SocialIcons href="https://github.com/DaffaAdityaDev" target="_target">
             <AiFillGithub size="2rem" margin-right= "5px"/> <h3>Github</h3>
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/daffaadityarahman-14b588192/"> 
+          <SocialIcons href="https://www.linkedin.com/in/daffaadityarahman-14b588192/" target="_target"> 
             <AiFillLinkedin size="2rem"/> <h3>LinkedIn</h3>
           </SocialIcons>
           <SocialIcons href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaadityarahman990@gmail.com" target="_blank"> 

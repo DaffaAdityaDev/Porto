@@ -4,6 +4,8 @@ import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag,
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
+import { Fade } from 'react-reveal';
+
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
@@ -12,6 +14,7 @@ const Projects = () => (
       {projects.map(({ id, image, title, description, tags, source, visit }) => {
         
         return <BlogCard key={id}>
+          <Fade>
           <Img src={image} />
           <TitleContent>
             <HeaderThree title>{title}</HeaderThree>
@@ -19,7 +22,7 @@ const Projects = () => (
           </TitleContent>
           <CardInfo>{description}</CardInfo>
           <div>
-            <TitleContent>Stack</TitleContent>
+            <TitleContent>Tech Stack</TitleContent>
             <TagList>
               {tags.map((tag, i) => (
                 <Tag key={i}>{tag}</Tag>
@@ -27,11 +30,12 @@ const Projects = () => (
             </TagList>
           </div>
           <UtilityList>
-            <ExternalLinks href={visit}>Code</ExternalLinks>
-            <ExternalLinks href={source}>source</ExternalLinks>
+            <ExternalLinks href={visit} target="_blank">Code</ExternalLinks>
+            <ExternalLinks href={source} target="_blank">Page</ExternalLinks>
           </UtilityList>
+          </Fade>
         </BlogCard>
-          
+        
       })}
     </GridContainer>
   </Section>
