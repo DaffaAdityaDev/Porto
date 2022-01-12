@@ -9,35 +9,39 @@ import { Fade } from 'react-reveal';
 const Projects = () => (
   <Section nopadding id="projects">
     <SectionDivider />
-    <SectionTitle main>Projects</SectionTitle>
-    <GridContainer>
-      {projects.map(({ id, image, title, description, tags, source, visit }) => {
-        
-        return <BlogCard key={id}>
-          <Fade>
-          <Img src={image} />
-          <TitleContent>
-            <HeaderThree title>{title}</HeaderThree>
-            <Hr />
-          </TitleContent>
-          <CardInfo>{description}</CardInfo>
-          <div>
-            <TitleContent>Tech Stack</TitleContent>
-            <TagList>
-              {tags.map((tag, i) => (
-                <Tag key={i}>{tag}</Tag>
-              ))}
-            </TagList>
-          </div>
-          <UtilityList>
-            <ExternalLinks href={visit} target="_blank">Code</ExternalLinks>
-            <ExternalLinks href={source} target="_blank">Page</ExternalLinks>
-          </UtilityList>
-          </Fade>
-        </BlogCard>
-        
-      })}
-    </GridContainer>
+    <Fade left>
+      <SectionTitle main>Projects</SectionTitle>
+    </Fade>
+    <Fade>
+      <GridContainer>
+        {projects.map(({ id, image, title, description, tags, source, visit }) => {
+          
+          return <BlogCard key={id}>
+            
+            <Img src={image} />
+            <TitleContent>
+              <HeaderThree title>{title}</HeaderThree>
+              <Hr />
+            </TitleContent>
+            <CardInfo>{description}</CardInfo>
+            <div>
+              <TitleContent>Tech Stack</TitleContent>
+              <TagList>
+                {tags.map((tag, i) => (
+                  <Tag key={i}>{tag}</Tag>
+                ))}
+              </TagList>
+            </div>
+            <UtilityList>
+              <ExternalLinks href={visit} target="_blank">Code</ExternalLinks>
+              <ExternalLinks href={source} target="_blank">Page</ExternalLinks>
+            </UtilityList>
+          
+          </BlogCard>
+          
+        })}
+      </GridContainer>
+    </Fade>
   </Section>
 );
 

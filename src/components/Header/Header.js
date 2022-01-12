@@ -25,11 +25,11 @@ const Header = () =>  (
           <NavLink>Projects</NavLink>
         </Link>
       </li> */}
-      <li>
+      {/* <li>
         <Link href="/Contact">
           <NavLink>Contact</NavLink>
         </Link>
-      </li>
+      </li> */}
     </Div2>
     {/* <Div3>
       <SocialIcons href="https://github.com">

@@ -25,10 +25,10 @@ const Footer = () => {
           <Slogan>Contact</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com">
+          <SocialIcons href="https://github.com/DaffaAdityaDev" target="_blank">
           <AiFillGithub size="3rem"/>
           </SocialIcons>
-          <SocialIcons href="https://linkedin.com">
+          <SocialIcons href="https://www.linkedin.com/in/daffaadityarahman-14b588192/" target="_blank">
             <AiFillLinkedin size="3rem"/>
           </SocialIcons>
           <SocialIcons href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaadityarahman990@gmail.com" target="_blank"> 
