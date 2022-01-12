@@ -14,12 +14,12 @@ const Header = () =>  (
         </a>
       </Link>
     </Div1> */}
-    <Div2>
+    {/* <Div2>
       <li>
         <Link href="/">
           <NavLink>Home</NavLink>
         </Link>
-      </li>
+      </li> */}
       {/* <li>
         <Link href="/Projects">
           <NavLink>Projects</NavLink>
@@ -29,8 +29,8 @@ const Header = () =>  (
         <Link href="/Contact">
           <NavLink>Contact</NavLink>
         </Link>
-      </li> */}
-    </Div2>
+      </li> */} 
+    {/* </Div2>
     {/* <Div3>
       <SocialIcons href="https://github.com">
         <AiFillGithub size="3rem"/>
