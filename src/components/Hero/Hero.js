@@ -19,7 +19,7 @@ const Hero = (props) => (
         I'm a Software Engineer
       </SectionTitle>
       <SectionText>
-        I'm a software engineer who focused build Front-end web developement in Jakarta
+        I'm a software engineer who focused build Front-end web development in Jakarta
       </SectionText>
       <Button onClick={() => window.open("https://www.linkedin.com/in/daffaadityarahman-14b588192/", "linkedin")}>About Me</Button>
       <SocialContainer>
