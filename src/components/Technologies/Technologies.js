@@ -49,7 +49,7 @@ const Technologies = () =>  (
               <ListTitle>UI/UX</ListTitle>
               <ListParagraph>
                 Figma <br />
-                PhotoShop <br/>
+                Photoshop <br/>
                 Responsive Design
               </ListParagraph>
             </ListContainer>
