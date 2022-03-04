@@ -50,7 +50,8 @@ const Technologies = () =>  (
               <ListParagraph>
                 Figma <br />
                 Photoshop <br/>
-                Responsive Design
+                Web Vital <br/>
+                Responsive Design <br/>
               </ListParagraph>
             </ListContainer>
           </ListItem>
