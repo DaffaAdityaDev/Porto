@@ -33,7 +33,7 @@ const Hero = (props) => (
         since that i started have passion on programming, After i've Finised CS50 Course i started to explored how to code myself, 
         I learn various language and tehcnologies start from Web-Development, Computer-Science, Software-Engineering, etc. <br/><br/>
 
-        When I'm not coding i play game with my friend, watch some anime, or if weather's good, go to joging or photography.
+        When I'm not coding i play game with my friend, watch some anime, or if weather's good, go to joging
       </AboutmeText>
       <SocialContainer>
           <SocialIcons href="https://github.com/DaffaAdityaDev" target="_target">
