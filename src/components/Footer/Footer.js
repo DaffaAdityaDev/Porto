@@ -17,7 +17,7 @@ const Footer = () => {
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaadityarahman990@gmail.com" target="_blank">daffaadityarahman990@gmail.com</LinkItem>
+          <LinkItem href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaaditya.me@gmail.com" target="_blank">daffaaditya.me@gmail.com</LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
@@ -31,7 +31,7 @@ const Footer = () => {
           <SocialIcons href="https://www.linkedin.com/in/daffaadityarahman-14b588192/" target="_blank">
             <AiFillLinkedin size="3rem"/>
           </SocialIcons>
-          <SocialIcons href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaadityarahman990@gmail.com" target="_blank"> 
+          <SocialIcons href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaaditya.me@gmail.com" target="_blank"> 
             <AiOutlineMail size="3rem"/> 
           </SocialIcons>
           

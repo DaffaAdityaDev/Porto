@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle, SectionSubTextColerBlue } from '../../styles/GlobalComponents';
+import { Section, SectionText, SectionTitle, SectionSubTextColerBlue, AboutmeText, CurrentmeText } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
 import { SocialIcons } from '../Header/HeaderStyles';
@@ -19,9 +19,22 @@ const Hero = (props) => (
         I'm a Software Engineer
       </SectionTitle>
       <SectionText>
-        I'm a software engineer who focused build Front-end web development in Jakarta
+        A self-taught software engineer who develop, build and Explore tehcnologies.
       </SectionText>
-      <Button onClick={() => window.open("https://www.linkedin.com/in/daffaadityarahman-14b588192/", "linkedin")}>About Me</Button>
+      <CurrentmeText>
+        🚀 Exploring opportunities and side projects. <br/>
+        🎓 Currently an Software Engineer Student at Bina Sarana Informatika. 
+      </CurrentmeText>
+      <Button>About Me</Button>
+      <AboutmeText>
+        Hey! I'm Daffa Aditya Rahman, I'm Passionate On Technologies and Programming <br/><br/>
+
+        I started my journey as a programmer when i've Graduated From Vocational High School, When My best friend recommended me to join a CS50's Introduction to Computer Science.
+        since that i started have passion on programming, After i've Finised CS50 Course i started to explored how to code myself, 
+        I learn various language and tehcnologies start from Web-Development, Computer-Science, Software-Engineering, etc. <br/><br/>
+
+        When I'm not coding i play game with my friend, watch some anime, or if weather's good, go to joging or photography.
+      </AboutmeText>
       <SocialContainer>
           <SocialIcons href="https://github.com/DaffaAdityaDev" target="_target">
             <AiFillGithub size="2rem" margin-right= "5px"/> <h3>Github</h3>
@@ -29,7 +42,7 @@ const Hero = (props) => (
           <SocialIcons href="https://www.linkedin.com/in/daffaadityarahman-14b588192/" target="_target"> 
             <AiFillLinkedin size="2rem"/> <h3>LinkedIn</h3>
           </SocialIcons>
-          <SocialIcons href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaadityarahman990@gmail.com" target="_blank"> 
+          <SocialIcons href="https://mail.google.com/mail/?view=cm&fs=1&to=daffaaditya.me@gmail.com" target="_blank"> 
             <AiOutlineMail size="2rem"/> <h3>Email</h3>
           </SocialIcons>
       </SocialContainer>

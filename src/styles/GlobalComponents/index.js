@@ -59,8 +59,56 @@ export const SectionText = styled.p`
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
-  padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 2.6rem;
+  color: rgba(255, 255, 255, 0.5); 
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+  }
+`
+export const AboutmeText = styled.p`
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 1.2rem;
+  color: rgba(255, 255, 255, 0.8); 
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 670px;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 24px;
+  }
+
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 16px;
+  }
+`
+
+export const CurrentmeTextStudent = styled.p`
+  max-width: 900px;
+  display: flex;
+  flex-direction: row;`
+
+export const CurrentmeText = styled.p`
+  max-width: 900px;
+  font-size: 24px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 3.2rem;
+  color: rgba(255, 255, 255, 0.9); 
 
   @media ${(props) => props.theme.breakpoints.md} {
     max-width: 670px;
@@ -188,17 +236,20 @@ export const SecondaryBtn = styled.button`
 export const ButtonBack = styled.div`
   width: ${({ alt }) => alt ? '150px' : '262px'};
   height: ${({ alt }) => alt ? '52px' : '64px'};
-  border-radius: 50px;
-  font-size: ${({ alt }) => alt ? '20px' : '24px'};
+  border-radius: 0px;
+  font-size: ${({ alt }) => alt ? '32px' : '36px'};
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: ${({ alt, form }) => (alt || form) ? '0' : '0 0 80px'};
+  margin: ${({ alt, form }) => (alt || form) ? '0 ' : '0 -45px 0px'};
   color: #fff;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #ff622e 0%, #B133FF 100%)' : 'linear-gradient(270deg, #00DBD8 0%, #B133FF 100%)'};
   cursor: pointer;
   transition: 0.5s ease;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
   position: relative;
   overflow: hidden;
   opacity: ${({ disabled }) => disabled ? '.5' : '1'};
@@ -206,15 +257,15 @@ export const ButtonBack = styled.div`
   @media ${(props) => props.theme.breakpoints.md} {
     width: ${({ alt }) => alt ? '150px' : '184px'};
     height: ${({ alt }) => alt ? '52px' : '48px'};
-    font-size: ${({ alt }) => alt ? '20px' : '16px'};
-    margin-bottom: ${({ alt }) => alt ? '0' : '64px'};
+    font-size: ${({ alt }) => alt ? '25px' : '32px'};
+    margin: ${({ alt }) => alt ? '0' : '0px -15px'};
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
     height: 32px;
-    font-size: 14px;
-    margin-bottom: ${({ alt }) => alt ? '0' : '32px'};
+    font-size: 26px;
+    margin-bottom: ${({ alt }) => alt ? '0' : '0px'};
   }
 `
 
@@ -228,8 +279,6 @@ export const ButtonFront = styled.button`
   left: 0;
   width: 100%;
   height: 100%;
-  background: ${({ alt }) => alt ? 'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' : 'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
-  opacity: ${({ disabled }) => disabled ? '.5' : '1'};
   transition: .4s ease;
   font-size: ${({ alt }) => alt ? '20px' : '24px'};
   font-weight: 600;
