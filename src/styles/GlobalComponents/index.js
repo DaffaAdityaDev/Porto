@@ -5,7 +5,7 @@ export const Section = styled.section`
   flex-direction: ${(props) => props.row ? "row" : "column" };
   padding: ${(props) => props.nopadding ? "0" : "32px 48px 0" } ;
   margin: 0 auto;
-  max-width: 1040px;
+  max-width: 900px;
   box-sizing: content-box;
   position: relative;
   overflow: hidden;
@@ -34,7 +34,7 @@ export const SectionTitle = styled.h2`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
-  padding: ${(props) => props.main ? '0px 0 16px' : '0'};
+  padding: ${(props) => props.main ? 'px  16px' : '0'};
 
   @media ${props => props.theme.breakpoints.md}{
     font-size: ${(props) => props.main ? '56px' : '48px'};
@@ -49,7 +49,7 @@ export const SectionTitle = styled.h2`
     font-size: ${(props) => props.main ? '28px' : '32px'};
     line-height: ${(props) => props.main ? '32px' : '40px'};
     margin-bottom: 8px;
-    padding: ${(props) => props.main ? '16px 0 8px' : '0'};
+    padding: ${(props) => props.main ? '16px 0 px' : '0'};
     max-width: 100%;
   }
 `
