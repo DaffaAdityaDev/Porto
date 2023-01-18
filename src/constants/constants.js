@@ -12,12 +12,12 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'MERN',
-    description: "Using React, Node.js, Express & MongoDB build a Full Stack MERN Application",
-      image: '/images/mern.png',
-      tags: ['Mongo', 'Express', 'React', 'Node'],
-    source: 'https://github.com/DaffaAdityaDev/MERNProject',
-    visit: 'https://github.com/DaffaAdityaDev/MERNProject', 
+    title: 'ChatYuk',
+    description: "a original realtime app chat using firebase and react",
+      image: '/images/chatyuk.JPG',
+      tags: ["React", "ChakraUI", "Hooks", "Firebase"],
+    source: 'https://chatyuk.netlify.app/',
+    visit: 'https://github.com/DaffaAdityaDev/ChatYuk', 
     id: 1,
   },
   {
