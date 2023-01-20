@@ -6,11 +6,13 @@ import { LeftSection } from './HeroStyles';
 import { SocialIcons } from '../Header/HeaderStyles';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillProfile, AiOutlineMail } from 'react-icons/ai';
 import { SocialContainer } from '../Footer/FooterStyles';
+import Redirect from '../Redirect/Redirect';
 
 
 const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
+      <Redirect />
       <SectionSubTextColerBlue>
         Hi There!, my name is
       </SectionSubTextColerBlue>
